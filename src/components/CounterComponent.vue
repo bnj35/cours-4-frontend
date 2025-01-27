@@ -1,7 +1,7 @@
 <script setup>
-import { useCounterStore } from '@/stores/counter'
+import { useCounterStore } from '@/stores/counter';
 
-const counterStore = useCounterStore()
+const counterStore = useCounterStore();
 </script>
 
 <template>
@@ -10,8 +10,18 @@ const counterStore = useCounterStore()
       Counter: <span id="counter">{{ counterStore.count }}</span>
     </h3>
     <div class="actions">
-      <button id="decrement" @click="counterStore.decrement()">Decrement</button>
-      <button id="increment" @click="counterStore.increment()">Increment</button>
+      <button
+        id="decrement"
+        @click="counterStore.decrement()"
+      >
+        Decrement
+      </button>
+      <button
+        id="increment"
+        @click="counterStore.increment()"
+      >
+        Increment
+      </button>
     </div>
   </div>
 </template>

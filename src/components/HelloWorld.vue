@@ -4,13 +4,15 @@ defineProps({
     type: String,
     required: true
   }
-})
-const appName = import.meta.env.VITE_APP_NAME
+});
+const appName = import.meta.env.VITE_APP_NAME;
 </script>
 
 <template>
   <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
+    <h1 class="green">
+      {{ msg }}
+    </h1>
     <h3>Running {{ appName }} app !</h3>
   </div>
 </template>
